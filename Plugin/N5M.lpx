@@ -8,8 +8,8 @@
 
 [General]
 bypass-tun =
-skip-proxy = www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,id6.me
-real-ip = www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,id6.me
+skip-proxy =www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,id6.me
+real-ip =*-update.xoyocdn.com,xg-flow.xoyo.com，www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,id6.me
 dns-server = 
 
 [rule]
@@ -33,9 +33,14 @@ DOMAIN-SUFFIX,hongguo.com,DIRECT
 DOMAIN-SUFFIX,hongguo.douyin.com,DIRECT
 DOMAIN-SUFFIX,byteimg.com,DIRECT
 DOMAIN-SUFFIX,pstatp.com,DIRECT
+
 [rewrite]
+# 剑网3无界
+^https:\/\/jx3comm\.xoyocdn\.com\/jx3gc\/zhcn\/login_ad\/WebCareer\/WebCareerTab\.txt reject
 
 [host]
+# 剑网3无界
+jx3comm.xoyocdn.com
 
 [script]
 
