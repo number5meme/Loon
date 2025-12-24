@@ -1,18 +1,20 @@
 #!name= ADblock
+#!desc：Update 20251224
 #!author= number5meme
 #!homepage= https://github.com/number5meme/Loon
 #!tag = 去广告
-# Update 20251224
 
 [Argument]
 
 [General]
 bypass-tun =
-skip-proxy =
-real-ip =
-dns-server =
+skip-proxy = www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,id6.me
+real-ip = www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,id6.me
+dns-server = 
 
 [rule]
+# 绕过农行检测
+DOMAIN,msmp.abchina.com.cn,REJECT
 # 红果广告拦截
 DOMAIN-SUFFIX,hongguoapp.com,REJECT
 DOMAIN-SUFFIX,hongguosdk.com,REJECT
