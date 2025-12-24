@@ -35,7 +35,7 @@ DOMAIN-SUFFIX,byteimg.com,DIRECT
 DOMAIN-SUFFIX,pstatp.com,DIRECT
 
 [rewrite]
-# 剑网3无界
+# 剑网3无界弹窗
 ^https:\/\/jx3comm\.xoyocdn\.com\/jx3gc\/zhcn\/login_ad\/WebCareer\/WebCareerTab\.txt reject
 
 [host]
