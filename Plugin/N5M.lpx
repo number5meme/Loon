@@ -10,7 +10,7 @@
 bypass-tun =
 skip-proxy =www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,id6.me
 real-ip =*-update.xoyocdn.com,xg-flow.xoyo.com，www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,id6.me
-dns-server = 
+dns-server =jx3comm.xoyocdn.com
 
 [rule]
 # 绕过农行检测
@@ -39,8 +39,6 @@ DOMAIN-SUFFIX,pstatp.com,DIRECT
 ^https:\/\/jx3comm\.xoyocdn\.com\/jx3gc\/zhcn\/login_ad\/WebCareer\/WebCareerTab\.txt reject
 
 [host]
-# 剑网3无界
-jx3comm.xoyocdn.com
 
 [script]
 
