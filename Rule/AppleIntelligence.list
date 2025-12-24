@@ -1,0 +1,12 @@
+# Update 20251224
+
+# Apple 智能拓展
+DOMAIN-SUFFIX, apple-relay.apple.com
+# 搜索服务
+DOMAIN-SUFFIX,smoot.apple.com
+# Siri 和听写请求
+DOMAIN-SUFFIX, guzzoni.apple.com
+# 私有云计算
+DOMAIN-SUFFIX,cp4.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX, apple-relay.fastly-edge.com
