@@ -1,0 +1,9 @@
+# Update 20251224
+
+# iCloud服务使用的特定苹果主机
+DOMAIN-SUFFIX, gateway.icloud.com
+# iCloud私人中继
+DOMAIN-SUFFIX, apple-relay.akamaized.net
+DOMAIN-SUFFIX, apple-relay.mask.apple-dns.net
+# 定位服务、证书验证、系统后台功能相关的安全通信
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
