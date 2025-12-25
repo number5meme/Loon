@@ -1,0 +1,27 @@
+#!name=N5M ADD
+#!desc=For Myself
+#!author=@number5meme
+#!homepage=https://github.com/number5meme/Loon
+#!date=2025-12-25
+
+[Argument]
+
+[General]
+bypass-tun =
+skip-proxy =
+real-ip =
+dns-server =
+
+[rule]
+
+
+[rewrite]
+# 剑网3无界_每日弹窗
+^https:\/\/jx3comm\.xoyocdn\.com\/jx3gc\/zhcn\/login_ad\/WebCareer\/WebCareerTab\.txt reject
+
+[host]
+
+[script]
+
+[mitm]
+hostname=jx3comm.xoyocdn.com
