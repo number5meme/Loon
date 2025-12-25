@@ -35,8 +35,6 @@ DOMAIN-SUFFIX,byteimg.com,DIRECT
 DOMAIN-SUFFIX,pstatp.com,DIRECT
 
 [rewrite]
-# 剑网3无界_每日弹窗
-^https:\/\/jx3comm\.xoyocdn\.com\/jx3gc\/zhcn\/login_ad\/WebCareer\/WebCareerTab\.txt reject
 # 高德地图_开屏广告@ddgksf2013
 ^https?:\/\/.*\.amap\.com\/ws\/aos\/alimama\/splash_screen url reject-200
 # 百度网盘_开屏广告@ddgksf2013
