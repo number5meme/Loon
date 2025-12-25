@@ -2,7 +2,7 @@
 #!desc=For Myself
 #!author=@number5meme
 #!homepage=https://github.com/number5meme/Loon
-#!date=2025-12-24
+#!date=2025-12-25
 
 [Argument]
 
@@ -35,12 +35,29 @@ DOMAIN-SUFFIX,byteimg.com,DIRECT
 DOMAIN-SUFFIX,pstatp.com,DIRECT
 
 [rewrite]
-# 剑网3无界弹窗
+# 剑网3无界_每日弹窗
 ^https:\/\/jx3comm\.xoyocdn\.com\/jx3gc\/zhcn\/login_ad\/WebCareer\/WebCareerTab\.txt reject
+# 高德地图_开屏广告@ddgksf2013
+^https?:\/\/.*\.amap\.com\/ws\/aos\/alimama\/splash_screen url reject-200
+# 百度网盘_开屏广告@ddgksf2013
+^https?:\/\/pan\.baidu\.com\/api\/getsyscfg url script-response-body https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js
+# 闲鱼_开屏广告@ddgksf2013
+^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop.*splash\.ads url reject-200
+# 夸克_移除阅读广告
+^https:\/\/huichuan\.sm\.cn\/nativead$ reject
+^https:\/\/stars\.shuqireader\.com\/kkios\/render\/load\/resource\/appConfig$ reject-dict
 
 [host]
 
 [script]
+http-response ^https:\/\/api\.weibo\.cn\/2\/(?:cardlist|page) script-path=https://kelee.one/Resource/JavaScript/Weibo/Weibo_remove_ads.js, requires-body=true, timeout=20, tag=移除微博信息流广告
+http-response ^https:\/\/api\.weibo\.cn\/2\/statuses\/(?:container_detail(_comment)?|container_timeline(?:_hot|_topic|_topicpage|_unread)?|repost_timeline|unread_hot_timeline) script-path=https://kelee.one/Resource/JavaScript/Weibo/Weibo_remove_ads.js, requires-body=true, timeout=20, tag=移除微博信息流广告
+http-response ^https:\/\/api\.weibo\.cn\/2\/comments\/build_comments\? script-path=https://kelee.one/Resource/JavaScript/Weibo/Weibo_remove_ads.js, requires-body=true, timeout=20, tag=移除微博评论区广告
+http-response ^https:\/\/api\.weibo\.cn\/2\/video\/(?:full_screen_stream|tiny_stream_mid_detail|tiny_stream_video_list)\? script-path=https://kelee.one/Resource/JavaScript/Weibo/Weibo_remove_ads.js, requires-body=true, timeout=20, tag=移除微博视频流广告
+http-response ^https:\/\/api\.weibo\.cn\/2\/(?:container\/asyn|flowlist|flowpage) script-path=https://kelee.one/Resource/JavaScript/Weibo/Weibo_remove_ads.js, requires-body=true, timeout=20, tag=移除个人微博详情页广告
+http-response ^https:\/\/bootpreload\.uve\.weibo\.com\/v[12]\/ad\/preload script-path=https://kelee.one/Resource/JavaScript/Weibo/Weibo_remove_ads.js, requires-body=true, timeout=20, tag=移除微博开屏广告 preload
+http-response ^https:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php script-path=https://kelee.one/Resource/JavaScript/Weibo/Weibo_remove_ads.js, requires-body=true, timeout=20, tag=移除微博开屏广告 sdkad
+http-response ^https:\/\/wbapp\.uve\.weibo\.com\/(?:preload\/get_ad|wbapplua\/wbpullad\.lua) script-path=https://kelee.one/Resource/JavaScript/Weibo/Weibo_remove_ads.js, requires-body=true, timeout=20, tag=移除微博开屏广告 wbapplua
 
 [mitm]
-hostname=jx3comm.xoyocdn.com
+hostname=jx3comm.xoyocdn.com,*.weibo.cn, *.weibo.com, weibo.com,*.amap.com,huichuan.sm.cn, stars.shuqireader.com, open-cms-api.quark.cn
