@@ -47,9 +47,9 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 # 兜底策略后备
 兜底后备策略 = fallback,全球时延优选,香港时延优选,台湾时延优选,日本时延优选,韩国时延优选,新国时延优选,美国时延优选,interval = 60,max-timeout = 2000,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/fallback.png
 # 时延优选策略组
-电信时延优选 = url-test,电信节点,interval = 60,tolerance = 50
+电信时延优选 = url-test,电信节点,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/10000.png
 移动时延优选 = url-test,移动节点,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/10086.png
-联通时延优选 = url-test,联通节点,interval = 60,tolerance = 50
+联通时延优选 = url-test,联通节点,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/10010.png
 全球时延优选 = url-test,全球节点,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
 香港时延优选 = url-test,香港节点,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
 台湾时延优选 = url-test,台湾节点,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
@@ -60,8 +60,8 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 # 手动策略组
 
 移动手动策略 = select,移动节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/10086.png
-联通手动策略 = select,联通节点
-电信手动策略 = select,电信节点
+联通手动策略 = select,联通节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/10010.png
+电信手动策略 = select,电信节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/10000.png
 全球手动策略 = select,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
 美国手动策略 = select,美国节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 香港手动策略 = select,香港节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
