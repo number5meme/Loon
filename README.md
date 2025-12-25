@@ -9,3 +9,5 @@ https://github.com/Loon0x00?tab=repositories
 https://github.com/luestr/ProxyResource
 
 https://github.com/ddgksf2013/ddgksf2013
+
+https://github.com/Orz-3/mini
