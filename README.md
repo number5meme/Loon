@@ -8,6 +8,8 @@
 
 可莉 https://github.com/luestr/ProxyResource
 
+https://raw.githubusercontent.com/Tartarus2014/Loon-Script/refs/heads/master/Plugin/skip-proxy.lpx
+
 墨鱼 https://github.com/ddgksf2013/ddgksf2013
 
 奶思 https://github.com/fmz200/wool_scripts/blob/main/README-RULE.md
