@@ -4,10 +4,12 @@
 
 感谢:
 
-https://github.com/Loon0x00?tab=repositories
+3K https://github.com/Loon0x00?tab=repositories
 
-https://github.com/luestr/ProxyResource
+可莉 https://github.com/luestr/ProxyResource
 
-https://github.com/ddgksf2013/ddgksf2013
+墨鱼 https://github.com/ddgksf2013/ddgksf2013
 
-https://github.com/Orz-3/mini
+奶思 https://github.com/fmz200/wool_scripts/blob/main/README-RULE.md
+
+图标库 https://github.com/Orz-3/mini
