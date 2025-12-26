@@ -19,6 +19,9 @@ dns-server =
 [rewrite]
 # 剑网3无界_每日弹窗
 ^https:\/\/jx3comm\.xoyocdn\.com\/jx3gc\/zhcn\/login_ad\/WebCareer\/WebCareerTab\.txt reject
+# 高铁管家去广告
+^https?:\/\/cdn\.133\.cn\/md\/gtgj\/.+\/.+720x1280 reject-dict
+^https?:\/\/[a-z]*\.rsscc\.com\/[a-z]*\/adver reject
 
 [host]
 
@@ -34,4 +37,4 @@ http-response ^https:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php scr
 http-response ^https:\/\/wbapp\.uve\.weibo\.com\/(?:preload\/get_ad|wbapplua\/wbpullad\.lua) script-path=https://kelee.one/Resource/JavaScript/Weibo/Weibo_remove_ads.js, requires-body=true, timeout=20, tag=移除微博开屏广告 wbapplua
 
 [mitm]
-hostname=jx3comm.xoyocdn.com,*.weibo.cn, *.weibo.com, weibo.com,
+hostname=jx3comm.xoyocdn.com,*.weibo.cn, *.weibo.com, weibo.com,cdn.133.cn, jt.rsscc.com, jp.rsscc.com
