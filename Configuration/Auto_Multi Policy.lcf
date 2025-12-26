@@ -106,6 +106,7 @@ https://kelee.one/Tool/Loon/Lpx/QQMusic_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/IThome_remove_ads.lpx, enabled=true
 https://raw.githubusercontent.com/Tartarus2014/Loon-Script/refs/heads/master/Plugin/skip-proxy.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/AppleWeatherEnhancer.lpx, enabled=true
+https://raw.githubusercontent.com/Roddy-D/Loon_plugins/refs/heads/main/plugin/iptest.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, pin=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, pin=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, policy=兜底后备策略, enabled=true
