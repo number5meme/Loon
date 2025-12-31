@@ -14,6 +14,6 @@
 
 图标库 https://github.com/Orz-3/mini
 
-跳过代理检测 https://raw.githubusercontent.com/Tartarus2014/Loon-Script/refs/heads/master/Plugin/skip-proxy.lpx
+Tartarus2014 https://github.com/Tartarus2014/For-own-use/tree/master/Loon/Plugin
 
-Ai https://raw.githubusercontent.com/iab0x00/ProxyRules/main/Rule/AI.txt
+AI https://raw.githubusercontent.com/iab0x00/ProxyRules/main/Rule/AI.txt
