@@ -44,14 +44,14 @@ Net-Adaptive = ssid
 # 当配置文件中存在有效的策略组时，内置的PROXY策略组将不再允许被调用，仅可使用用户配置的策略组
 # 配置文件已自带远程GEOIP, cn, DIRECT规则，请勿在此添加
 # 请勿修改远程CN REGION规则的排序甚至删除
-FINAL,全球手动策略
+FINAL,Net-Adaptive
 
 [Remote Rule]
 https://raw.githubusercontent.com/number5meme/Loon/refs/heads/main/Rule/AppleIntelligence.lsr, policy=DIRECT, tag=AppleIntelligence, enabled=true
 https://raw.githubusercontent.com/number5meme/Loon/refs/heads/main/Rule/Appleicloud.lsr, policy=DIRECT, tag=Appleicloud, enabled=true
-https://kelee.one/Tool/Loon/Lsr/TikTok.lsr, policy=全球手动策略, tag=TikTok, enabled=true
-https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy=全球手动策略, tag=AI, enabled=true
-https://kelee.one/Tool/Loon/Lsr/SpeedtestInternational.lsr, policy=全球手动策略, tag=Speedtest Intl, enabled=true
+https://kelee.one/Tool/Loon/Lsr/TikTok.lsr, policy=Net-Adaptive, tag=TikTok, enabled=true
+https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy=Net-Adaptive, tag=AI, enabled=true
+https://kelee.one/Tool/Loon/Lsr/SpeedtestInternational.lsr, policy=Net-Adaptive, tag=Speedtest Intl, enabled=true
 https://kelee.one/Tool/Loon/Lsr/SpeedtestChina.lsr, policy=DIRECT, tag=SpeedtestChina, enabled=true
 https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy=DIRECT, tag=LAN, enabled=true
 https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=DIRECT, tag=CN REGION, enabled=true
@@ -85,11 +85,11 @@ https://kelee.one/Tool/Loon/Lpx/QQMusic_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/IThome_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/AppleWeatherEnhancer.lpx, enabled=true
 https://raw.githubusercontent.com/Roddy-D/Loon_plugins/refs/heads/main/plugin/iptest.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, policy=全球手动策略, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, policy=Net-Adaptive, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/BoxJs.lpx, policy=全球手动策略, enabled=true
-https://kelee.one/Tool/Loon/Lpx/Sub-Store.lpx, policy=全球手动策略, enabled=true
-https://kelee.one/Tool/Loon/Lpx/Script-Hub.lpx, policy=全球手动策略, enabled=true
+https://kelee.one/Tool/Loon/Lpx/BoxJs.lpx, policy=Net-Adaptive, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Sub-Store.lpx, policy=Net-Adaptive, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Script-Hub.lpx, policy=Net-Adaptive, enabled=true
 
 [Mitm]
 ca-p12 = 
