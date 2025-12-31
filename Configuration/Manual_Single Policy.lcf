@@ -37,7 +37,7 @@ Global = NameRegex, FilterKey = "^(?=.*(.))(?!.*((?i)群|邀请|返利|循环|�
 
 [Proxy Group]
 Manual-Global = select,Global,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
-Net-Adaptive = ssid
+Net-Adaptive = ssid,,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Manual.png
 
 [Rule]
 # 当配置文件中没有任何有效策略组时，Loon将使用内置的PROXY策略组
