@@ -1,5 +1,5 @@
 # Loon 入门配置 - https://raw.githubusercontent.com/luestr/ProxyResource/main/Tool/Loon/Lcf/zh-CN/Loon_Beginner_Config_By_iKeLee.lcf
-# Date: 2025-11-08 00:21:37
+# Date: 2025-12-31
 # Author: https://t.me/iKeLee
 # 更多插件可前往 https://hub.kelee.one 安装
 
@@ -67,6 +67,8 @@ https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, pin=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, pin=true, enabled=true
 https://raw.githubusercontent.com/number5meme/Loon/refs/heads/main/Plugin/N5M.lpx, pin=true, enabled=true
 https://raw.githubusercontent.com/number5meme/Loon/refs/heads/main/Plugin/N5M%20ADD.lpx, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/LoonGallery.lpx, policy=Manual-Global, enabled=true
+https://raw.githubusercontent.com/Roddy-D/Loon_plugins/refs/heads/main/plugin/iptest.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/TXDocs_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/smzdm_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/FlyerTea_remove_ads.lpx, enabled=true
@@ -74,7 +76,6 @@ https://kelee.one/Tool/Loon/Lpx/DragonRead_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Bilibili_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/YouTube_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Reddit_remove_ads.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/12306_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/LOL_Bible_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/XiaoHeiHe_remove_ads.lpx, enabled=true
@@ -84,7 +85,6 @@ https://kelee.one/Tool/Loon/Lpx/ColorfulClouds_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/QQMusic_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/IThome_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/AppleWeatherEnhancer.lpx, enabled=true
-https://raw.githubusercontent.com/Roddy-D/Loon_plugins/refs/heads/main/plugin/iptest.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, policy=Net-Adaptive, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/BoxJs.lpx, policy=Net-Adaptive, enabled=true
