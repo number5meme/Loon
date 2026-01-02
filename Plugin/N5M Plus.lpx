@@ -14,15 +14,10 @@ real-ip =
 dns-server =
 
 [rule]
-# 12306去广告
-DOMAIN,ad.12306.cn,DIRECT
 
 [rewrite]
 # 剑网3无界_每日弹窗
 ^https:\/\/jx3comm\.xoyocdn\.com\/jx3gc\/zhcn\/login_ad\/WebCareer\/WebCareerTab\.txt reject
-# 高铁管家去广告
-^https?:\/\/cdn\.133\.cn\/md\/gtgj\/.+\/.+720x1280 reject-dict
-^https?:\/\/[a-z]*\.rsscc\.com\/[a-z]*\/adver reject
 
 [host]
 
@@ -36,8 +31,6 @@ http-response ^https:\/\/api\.weibo\.cn\/2\/(?:container\/asyn|flowlist|flowpage
 http-response ^https:\/\/bootpreload\.uve\.weibo\.com\/v[12]\/ad\/preload script-path=https://kelee.one/Resource/JavaScript/Weibo/Weibo_remove_ads.js, requires-body=true, timeout=20, tag=移除微博开屏广告 preload
 http-response ^https:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php script-path=https://kelee.one/Resource/JavaScript/Weibo/Weibo_remove_ads.js, requires-body=true, timeout=20, tag=移除微博开屏广告 sdkad
 http-response ^https:\/\/wbapp\.uve\.weibo\.com\/(?:preload\/get_ad|wbapplua\/wbpullad\.lua) script-path=https://kelee.one/Resource/JavaScript/Weibo/Weibo_remove_ads.js, requires-body=true, timeout=20, tag=移除微博开屏广告 wbapplua
-# 12306去广告
-http-request ^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList$ script-path=https://kelee.one/Resource/JavaScript/12306/12306_remove_splashscreen_ads.js, requires-body=true, timeout=20, tag=移除12306开屏广告
 
 [mitm]
 hostname=jx3comm.xoyocdn.com,*.weibo.cn, *.weibo.com, weibo.com,cdn.133.cn, jt.rsscc.com, jp.rsscc.com,ad.12306.cn, mobile.12306.cn
