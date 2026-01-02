@@ -3,7 +3,8 @@
 # Author: https://t.me/iKeLee
 # 更多插件可前往 https://hub.kelee.one 安装
 
-[General]
+[General
+doh-server = https://doh.pub/dns-query,https://dns.alidns.com/dns-query
 ip-mode = dual
 ipv6-vif = off
 dns-server = system
