@@ -1,12 +1,12 @@
-# 基于 Loon 入门配置魔改自用 - https://raw.githubusercontent.com/luestr/ProxyResource/main/Tool/Loon/Lcf/zh-CN/Loon_Beginner_Config_By_iKeLee.lcf
+# Loon 入门配置 - https://raw.githubusercontent.com/luestr/ProxyResource/main/Tool/Loon/Lcf/zh-CN/Loon_Beginner_Config_By_iKeLee.lcf
 # Date: 2025-12-31
 # Author: https://t.me/iKeLee
 # 更多插件可前往 https://hub.kelee.one 安装
 
-[General
+[General]
 doh-server = https://223.5.5.5/dns-query,https://doh.pub/dns-query
 ip-mode = dual
-ipv6-vif = off
+ipv6-vif = auto
 dns-server = system
 sni-sniffing = true
 disable-stun = true
@@ -29,17 +29,14 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 
 [Proxy]
 
-
 [Remote Proxy]
-
 
 [Remote Filter]
 All = NameRegex, FilterKey = "^(?=.*(.))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|超时|收藏|福利|邀请|好友|失联|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic)(\d+)?\b|(\d{4}-\d{2}-\d{2}|\dG)))).*$"
 
 [Proxy Group]
-Global = select,ok,url = http://www.gstatic.com/generate_204,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
-Net-Adaptive = url-test,ok,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 50
-Fallback = fallback,Net-Adaptive,ok,interval = 300,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Auto.png
+Net-Adaptive = url-test,,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 30,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Manual.png
+Fallback = fallback,Net-Adaptive,url = http://www.gstatic.com/generate_204,interval = 300,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Auto.png
 
 [Rule]
 # 当配置文件中没有任何有效策略组时，Loon将使用内置的PROXY策略组
@@ -49,12 +46,12 @@ Fallback = fallback,Net-Adaptive,ok,interval = 300,img-url = https://raw.githubu
 FINAL,Net-Adaptive
 
 [Remote Rule]
-https://raw.githubusercontent.com/number5meme/Loon/refs/heads/main/Rule/AppleIntelligence.lsr, policy=DIRECT, tag=AppleIntelligence, enabled=true
-https://raw.githubusercontent.com/number5meme/Loon/refs/heads/main/Rule/Appleicloud.lsr, policy=DIRECT, tag=Appleicloud, enabled=true
+https://raw.githubusercontent.com/number5meme/Loon/refs/heads/main/Rule/AppleIntelligence.lsr, policy=Net-Adaptive, tag=AppleIntelligence, enabled=false
+https://raw.githubusercontent.com/number5meme/Loon/refs/heads/main/Rule/Appleicloud.lsr, policy=Net-Adaptive, tag=Appleicloud, enabled=false
+https://kelee.one/Tool/Loon/Lsr/SpeedtestChina.lsr, policy=DIRECT, tag=SpeedtestChina, enabled=true
 https://kelee.one/Tool/Loon/Lsr/TikTok.lsr, policy=Net-Adaptive, tag=TikTok, enabled=true
 https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy=Net-Adaptive, tag=AI, enabled=true
 https://kelee.one/Tool/Loon/Lsr/SpeedtestInternational.lsr, policy=Net-Adaptive, tag=Speedtest Intl, enabled=true
-https://kelee.one/Tool/Loon/Lsr/SpeedtestChina.lsr, policy=DIRECT, tag=SpeedtestChina, enabled=true
 https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy=DIRECT, tag=LAN, enabled=true
 https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=DIRECT, tag=CN REGION, enabled=true
 
@@ -65,11 +62,13 @@ https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=DIRECT, tag=CN REGIO
 [Script]
 
 [Plugin]
+https://kelee.one/Tool/Loon/Lpx/QuarkBrowser_remove_ads.lpx, enabled=true
+https://raw.githubusercontent.com/Roddy-D/Loon_plugins/refs/heads/main/plugin/iptest.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/LoonGallery.lpx, policy=Net-Adaptive, enabled=true
 https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, pin=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, pin=true, enabled=true
 https://raw.githubusercontent.com/number5meme/Loon/refs/heads/main/Plugin/N5M.lpx, pin=true, enabled=true
-https://raw.githubusercontent.com/number5meme/Loon/refs/heads/main/Plugin/N5M%20ADD.lpx, pin=true, enabled=true
-https://kelee.one/Tool/Loon/Lpx/LoonGallery.lpx, policy=Manual-Global, enabled=true
+https://raw.githubusercontent.com/number5meme/Loon/refs/heads/main/Plugin/N5M%20Plus.lpx, pin=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/TXDocs_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/smzdm_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/FlyerTea_remove_ads.lpx, enabled=true
@@ -87,7 +86,6 @@ https://kelee.one/Tool/Loon/Lpx/QQMusic_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/IThome_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/AppleWeatherEnhancer.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, policy=Net-Adaptive, enabled=true
-https://raw.githubusercontent.com/Roddy-D/Loon_plugins/refs/heads/main/plugin/iptest.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/BoxJs.lpx, policy=Net-Adaptive, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Sub-Store.lpx, policy=Net-Adaptive, enabled=true
@@ -97,6 +95,4 @@ https://kelee.one/Tool/Loon/Lpx/Script-Hub.lpx, policy=Net-Adaptive, enabled=tru
 ca-p12 = 
 ca-passphrase = 
 hostname =
-ca-p12=
-ca-passphrase=
 skip-server-cert-verify = false
