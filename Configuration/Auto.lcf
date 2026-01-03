@@ -43,7 +43,7 @@ Fallback = fallback,Net-Adaptive,url = http://www.gstatic.com/generate_204,inter
 # 当配置文件中存在有效的策略组时，内置的PROXY策略组将不再允许被调用，仅可使用用户配置的策略组
 # 配置文件已自带远程GEOIP, cn, DIRECT规则，请勿在此添加
 # 请勿修改远程CN REGION规则的排序甚至删除
-FINAL,Net-Adaptive
+FINAL,Fallback
 
 [Remote Rule]
 https://raw.githubusercontent.com/number5meme/Loon/refs/heads/main/Rule/AppleIntelligence.lsr, policy=Net-Adaptive, tag=AppleIntelligence, enabled=false
