@@ -7,7 +7,7 @@
 doh-server = https://223.5.5.5/dns-query,https://doh.pub/dns-query
 ip-mode = dual
 ipv6-vif = auto
-dns-server = system
+dns-server = 223.5.5.5,119.29.29.29
 sni-sniffing = true
 disable-stun = true
 dns-reject-mode = LoopbackIP
