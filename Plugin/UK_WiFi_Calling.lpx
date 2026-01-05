@@ -1,0 +1,47 @@
+#!name=UK_WiFi_Calling
+#!icon=
+#!desc=UK_WiFi_Calling
+#!author=
+#!homepage=
+#!date=2026-01-05
+# https://raw.githubusercontent.com/iniwex5/tools/refs/heads/main/rules/UK-wifi-call.list
+
+[Argument]
+
+[General]
+bypass-tun =
+skip-proxy =
+real-ip =+.pub.3gppnetwork.org
+dns-server =
+
+[rule]
+  # 地区检测
+  - RULE-SET,ukwifi,UK_WiFi_Calling
+  - DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,UK_WiFi_Calling
+  # 沃达丰
+  - DOMAIN-SUFFIX,epdg.epc.mnc015.mcc234.pub.3gppnetwork.org,UK_WiFi_Calling
+  - DOMAIN-SUFFIX,ss.epdg.epc.mnc015.mcc234.pub.3gppnetwork.org,UK_WiFi_Calling
+  - DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc015.mcc234.pub.3gppnetwork.org,UK_WiFi_Calling
+  - DOMAIN-SUFFIX,entsrv-uk.vodafone.com,UK_WiFi_Calling
+  - DOMAIN-SUFFIX,vuk-gto.prod.ondemandconnectivity.com,UK_WiFi_Calling
+  - IP-CIDR,88.82.0.0/19,UK_WiFi_Calling,no-resolve
+  # CMLinkUK EE
+  - IP-CIDR,46.68.0.0/17,UK_WiFi_Calling,no-resolve
+  # CTE
+  - DOMAIN-SUFFIX, ee.co.uk
+  - IP-CIDR, 31.94.0.0/16
+  # Giffgaff
+  - IP-CIDR,87.194.0.0/16,UK_WiFi_Calling,no-resolve
+  - DOMAIN-SUFFIX,giffgaff.com,UK_WiFi_Calling
+  - DOMAIN-SUFFIX,giffgaff.design,UK_WiFi_Calling
+  - DOMAIN-SUFFIX, gmcc234.pub.3gppnetwork.org,UK_WiFi_Calling
+  - DOMAIN-SUFFIX, epdg.epc.mnc010.mcc234.pub.3gppnetwork.org,UK_WiFi_Calling
+
+[rewrite]
+
+[host]
+
+[script]
+
+[mitm]
+hostname=
