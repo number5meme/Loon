@@ -50,4 +50,4 @@ DOMAIN-SUFFIX,pstatp.com,DIRECT
 http-response ^https?:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|subscribe) script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/scripts/Flightradar24.js, requires-body=true, timeout=60, tag=Flightradar24解锁
 
 [mitm]
-hostname=*.amap.com
+hostname=jx3comm.xoyocdn.com,*.amap.com
