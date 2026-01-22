@@ -10,7 +10,7 @@
 [General]
 bypass-tun =
 skip-proxy =
-real-ip =
+real-ip =*-update.xoyocdn.com,xg-flow.xoyo.com
 dns-server =
 
 [rule]
