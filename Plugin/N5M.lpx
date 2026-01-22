@@ -10,7 +10,7 @@
 [General]
 bypass-tun =
 skip-proxy =www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,id6.me
-real-ip =*-update.xoyocdn.com,xg-flow.xoyo.com，www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,id6.me
+real-ip =*-update.xoyocdn.com,xg-flow.xoyo.com,www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,id6.me,open.e.189.cn,easy-login.10099.com.cn
 dns-server =
 
 [rule]
