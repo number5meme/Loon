@@ -10,7 +10,7 @@
 [General]
 bypass-tun =
 skip-proxy =
-real-ip =*-update.xoyocdn.com,xg-flow.xoyo.com
+real-ip =*-update.xoyocdn.com,xg-flow.xoyo.com,xoyo.com
 dns-server =
 
 [rule]
@@ -33,4 +33,4 @@ http-response ^https:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php scr
 http-response ^https:\/\/wbapp\.uve\.weibo\.com\/(?:preload\/get_ad|wbapplua\/wbpullad\.lua) script-path=https://kelee.one/Resource/JavaScript/Weibo/Weibo_remove_ads.js, requires-body=true, timeout=20, tag=移除微博开屏广告 wbapplua
 
 [mitm]
-hostname=jx3comm.xoyocdn.com,*.weibo.cn,*.weibo.com,weibo.com
+hostname=jx3comm.xoyocdn.com,xoyo.com,*.weibo.cn,*.weibo.com,weibo.com
