@@ -110,32 +110,15 @@ DOMAIN-SUFFIX,inner-active.mobi,REJECT
 DOMAIN-SUFFIX,4dvertible.com,REJECT
 DOMAIN-SUFFIX,smadex.com,REJECT
 
-# 以下为该软件需要走代理的规则
+# 需要代理 https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/main/TalkatoneProxyOnly.list
 DOMAIN-SUFFIX,tktn.at,PROXY
 DOMAIN-SUFFIX,tktn.be,PROXY
-DOMAIN-SUFFIX,talkatone.com,PROXY
 # 语音留言地址，需要代理
 DOMAIN-SUFFIX,vm.talkatone.com,PROXY
 # 贴图服务地址，需要代理
 DOMAIN-SUFFIX,tenor.com,PROXY
 
-IP-CIDR,50.117.27.0/24,PROXY,no-resolve
-IP-CIDR,63.251.124.0/24,PROXY,no-resolve
-IP-CIDR,69.46.75.0/24,PROXY,no-resolve
-IP-CIDR,205.164.56.0/24,PROXY,no-resolve
-IP-CIDR,216.172.154.0/24,PROXY,no-resolve
-
-# https://raw.githubusercontent.com/mottzz87/crules/main/rule/talkatone.list
-DOMAIN-SUFFIX,cohere.com
-DOMAIN-SUFFIX,ip-api.com
-DOMAIN-SUFFIX,agkn.com
-DOMAIN-SUFFIX,mobilefuse.com
-DOMAIN-SUFFIX,inmobi.com
-DOMAIN-SUFFIX,crashlytics.com
-DOMAIN-SUFFIX,talkatone.com
-DOMAIN-SUFFIX,kochava.com
-
-# 直连
+# 需要直连 https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/TalkatoneDirect.list
 DOMAIN-SUFFIX,agkn.com,direct
 DOMAIN-SUFFIX,cohere.com,direct
 DOMAIN-SUFFIX,crashlytics.com,direct
@@ -145,8 +128,8 @@ DOMAIN-SUFFIX,ip-api.com,direct
 DOMAIN-SUFFIX,kochava.com,direct
 DOMAIN-SUFFIX,mobilefuse.com,direct
 DOMAIN-SUFFIX,talkatone.com,direct
-IP-CIDR,205.164.56.0/24,no-resolve,direct
-IP-CIDR,216.172.154.0/24,no-resolve,direct
-IP-CIDR,50.117.27.0/24,no-resolve,direct
-IP-CIDR,63.251.124.0/24,no-resolve,direct
-IP-CIDR,69.46.75.0/24,no-resolve,direct
+IP-CIDR,205.164.56.0/24,direct,no-resolve
+IP-CIDR,216.172.154.0/24,direct,no-resolve
+IP-CIDR,50.117.27.0/24,direct,no-resolve
+IP-CIDR,63.251.124.0/24,direct,no-resolve
+IP-CIDR,69.46.75.0/24,direct,no-resolve
