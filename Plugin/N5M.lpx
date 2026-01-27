@@ -27,7 +27,6 @@ DOMAIN-KEYWORD,hongguo.ad,REJECT
 # 字节系广告兜底
 DOMAIN-SUFFIX,ad.pangle.cn,REJECT
 DOMAIN-SUFFIX,ad.pangolin.cn,REJECT
-DOMAIN-SUFFIX,zijieapi.com,REJECT
 DOMAIN-KEYWORD,tnc.snssdk,REJECT
 # 红果内容直连
 DOMAIN-SUFFIX,hongguo.com,DIRECT
