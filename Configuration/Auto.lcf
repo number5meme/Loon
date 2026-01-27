@@ -63,13 +63,18 @@ https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=DIRECT, tag=CN REGIO
 [Script]
 
 [Plugin]
-https://kelee.one/Tool/Loon/Lpx/QuarkBrowser_remove_ads.lpx, enabled=true
-https://raw.githubusercontent.com/Roddy-D/Loon_plugins/refs/heads/main/plugin/iptest.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/LoonGallery.lpx, policy=Fallback, enabled=true
 https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, pin=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, pin=true, enabled=true
 https://raw.githubusercontent.com/number5meme/Loon/refs/heads/main/Plugin/N5M.lpx, pin=true, enabled=true
 https://raw.githubusercontent.com/number5meme/Loon/refs/heads/main/Plugin/N5M%20Plus.lpx, pin=true, enabled=true
+
+https://raw.githubusercontent.com/lonecale/Groceries/90e8430cfe6a8deb8104e8c39893e4c76a7a0d00/Loon/Plugin/Talkatone.plugin, policy=Manual, enabled=true
+https://kelee.one/Tool/Loon/Lpx/SeasunJX3_remove_ads.lpx, enabled=true
+https://github.com/NSRingo/WeatherKit/releases/latest/download/iRingo.WeatherKit.plugin, enabled=true
+https://github.com/NSRingo/Maps/releases/latest/download/iRingo.Maps.plugin, enabled=true
+https://github.com/NSRingo/LocationService/releases/latest/download/iRingo.LocationService.plugin, enabled=true
+
+https://kelee.one/Tool/Loon/Lpx/QuarkBrowser_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/TXDocs_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/smzdm_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/FlyerTea_remove_ads.lpx, enabled=true
@@ -85,9 +90,9 @@ https://kelee.one/Tool/Loon/Lpx/Umetrip_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/ColorfulClouds_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/QQMusic_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/IThome_remove_ads.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/AppleWeatherEnhancer.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, policy=Fallback, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled=true
+https://raw.githubusercontent.com/Roddy-D/Loon_plugins/refs/heads/main/plugin/iptest.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/BoxJs.lpx, policy=Fallback, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Sub-Store.lpx, policy=Fallback, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Script-Hub.lpx, policy=Fallback, enabled=true
