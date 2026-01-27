@@ -1,5 +1,5 @@
 #!name = Talkatone
-#!desc = Talkatone去广告分流，使用前请在本插件的详情页面为[PROXY]项分配代理策略。本模块仅适用于 Talkatone 登陆后使用，不适用于软件注册，若尝试登录时失败可以将 tktn.at 的策略改为 DIRECT 后再试，成功后改回本来策略或重新更新本模块。
+#!desc = 本模块仅适用于 Talkatone 登陆后使用，不适用于软件注册，若尝试登录时失败可以将 tktn.at 的策略改为 DIRECT 后再试，成功后改回本来策略或重新更新本模块。
 #!author = LOWERTOP[https://github.com/LOWERTOP/Shadowrocket-First/blob/main/Talkatone.sgmodule],可莉🅥[https://kelee.one/Tool/Loon/Lsr/Talkatone.lsr]
 #!tag = 分流,去广告
 #!system = iOS,iPadOS
