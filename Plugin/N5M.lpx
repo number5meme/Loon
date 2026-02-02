@@ -1,9 +1,9 @@
 #!name=N5M
-#!icon=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png
 #!desc=For Our
-#!author=@number5meme
-#!homepage=https://github.com/number5meme/Loon
 #!date=2026-02-02
+#!homepage=https://github.com/number5meme/Loon
+#!author = number5meme[https://github.com/number5meme]
+#!icon=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png
 
 [Argument]
 
@@ -33,7 +33,7 @@ DOMAIN-SUFFIX,hongguo.com,DIRECT
 DOMAIN-SUFFIX,hongguo.douyin.com,DIRECT
 DOMAIN-SUFFIX,byteimg.com,DIRECT
 DOMAIN-SUFFIX,pstatp.com,DIRECT
-# 绕过淘宝检测
+# 绕过淘宝检测 https://yfamilys.com/rule/Alibaba.list
 DOMAIN-SUFFIX,alibaba,DIRECT
 DOMAIN-SUFFIX,taobao,DIRECT
 DOMAIN-SUFFIX,tmall,DIRECT
