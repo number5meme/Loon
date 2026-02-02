@@ -14,6 +14,7 @@ real-ip =*-update.xoyocdn.com,xg-flow.xoyo.com,www.baidu.com,yunbusiness.ccb.com
 dns-server =
 
 [rule]
+DOMAIN,Google.com,PROXY
 # 绕过农行检测
 DOMAIN,msmp.abchina.com.cn,REJECT
 # 红果广告拦截
