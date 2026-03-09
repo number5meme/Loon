@@ -102,6 +102,7 @@ IP-CIDR,8.208.0.0/12,DIRECT,no-resolve
 
 [host]
 
+
 [script]
 # Flightradar24解锁
 http-response ^https?:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|subscribe) script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/scripts/Flightradar24.js, requires-body=true, timeout=60, tag=Flightradar24解锁
