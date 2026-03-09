@@ -15,7 +15,7 @@ dns-server =
 
 [rule]
 # 绕过农行检测
-DOMAIN,msmp.abchina.com.cn,REJECT
+HOST-SUFFIX,msmp.abchina.com.cn,REJECT
 # 红果广告拦截
 DOMAIN-SUFFIX,hongguoapp.com,REJECT
 DOMAIN-SUFFIX,hongguosdk.com,REJECT
