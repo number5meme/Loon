@@ -5,8 +5,9 @@ DOMAIN-SUFFIX,phoenix-server-logstore.us-east-1.log.aliyuncs.com
 DOMAIN-SUFFIX,gw.alibaba.com
 DOMAIN-SUFFIX,phoenix-gw.alibaba.com
 DOMAIN-SUFFIX,aplus.alibaba.com
+DOMAIN-SUFFIX,fourier.alibaba.com
 DOMAIN-SUFFIX,offer.alibaba.com
 DOMAIN-SUFFIX,gm.mmstat.com
-DOMAIN-SUFFIX,e6my6o.tdum.alibaba.com
+DOMAIN-SUFFIX,tdum.alibaba.com
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,stripe.network
