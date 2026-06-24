@@ -107,7 +107,6 @@ IP-CIDR,8.208.0.0/12,DIRECT,no-resolve
 [script]
 # Flightradar24解锁
 http-response ^https?:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|subscribe) script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/scripts/Flightradar24.js, requires-body=true, timeout=60, tag=Flightradar24解锁
-http-request ^https?:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|\w{9}) script-path=http://script.hub/convert/_start_/https://ddgksf2013.top/scripts/flightradar24.vip.js/_end_/flightradar24.vip.js?type=qx-script&target=loon-script&wrap_response=true&headers=User-Agent%3AQuantumult%20X%2F1.5.4%20(iPhone17%2C3%3B%20iOS%2026.1), timeout=60, tag=Flightradar24解锁
 
 [mitm]
 hostname=jx3comm.xoyocdn.com,*.amap.com,mobile.flightradar24.com
